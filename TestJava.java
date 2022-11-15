@@ -11,6 +11,7 @@ public class TestJava {
         for (int x = 0; x < size; x++) {
             int d = getDigit(n, x);
             retSum += d;
+            // comment
         }
         return retSum;
     }
@@ -18,5 +19,9 @@ public class TestJava {
     public static int getDigit(int num, int ind) {
         double div = Math.pow(10, (ind));
         return (num / (int) div) % 10;
+    }
+
+    public static void main() {
+        /* empty for now */
     }
 }
